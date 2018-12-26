@@ -351,9 +351,3 @@ Final code and a demo project can be found at [https://github.com/jhtodd/Sequent
 As I mentioned at the beginning, the general COMB approach has been used fairly heavily by various frameworks, and the general concept isn't particularly new, and certainly not original to me.  My goal here was to illustrate the ways in which the approach has to be adapted to fit different database types, as well as to provide benchmark information underscoring the need for a tailored approach.
 
 With a little effort and a moderate amount of testing, it's possible to implement a consistent way of generating sequential GUIDs that can easily be used as high-performance primary keys under pretty much any database system.
-
-## History
-
-v1 - Wrote the thing!
-
-v2 - Adopted Rich Andersen's suggestion of using DateTime.UtcNow instead of DateTime.Now, for improved performance and updated code formatting.
