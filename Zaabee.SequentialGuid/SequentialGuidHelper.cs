@@ -6,7 +6,7 @@ namespace Zaabee.SequentialGuid
     public class SequentialGuidHelper
     {
         /// <summary>
-        /// 获取有序的唯一ID。
+        /// Generate Comb
         /// </summary>
         /// <returns></returns>
         public static Guid GenerateComb(SequentialGuidType sequentialGuidType = SequentialGuidType.SequentialAsString)
