@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 using Zaabee.SequentialGuid;
@@ -10,30 +9,15 @@ namespace TestProject
     {
         private const int quantity = 1000;
 
-        [Fact]
-        public void TestSequentialAsBinary()
+        [Theory]
+        [InlineData(SequentialGuidType.SequentialAsBinary)]
+        [InlineData(SequentialGuidType.SequentialAsString)]
+        [InlineData(SequentialGuidType.SequentialAtEnd)]
+        public void TestSequentialAsBinary(SequentialGuidType sequentialGuidType)
         {
             var guids = new Guid[quantity];
-            Enumerable.Range(0, 1000).AsParallel().ForAll(p =>
-                guids[p] = (SequentialGuidHelper.GenerateComb(SequentialGuidType.SequentialAsBinary)));
-            Assert.Equal(guids, guids.Distinct());
-        }
-
-        [Fact]
-        public void TestSequentialAsString()
-        {
-            var guids = new Guid[quantity];
-            Enumerable.Range(0, 1000).AsParallel().ForAll(p =>
-                guids[p] = (SequentialGuidHelper.GenerateComb(SequentialGuidType.SequentialAsString)));
-            Assert.Equal(guids, guids.Distinct());
-        }
-
-        [Fact]
-        public void TestSequentialAtEnd()
-        {
-            var guids = new Guid[quantity];
-            Enumerable.Range(0, 1000).AsParallel().ForAll(p =>
-                guids[p] = (SequentialGuidHelper.GenerateComb(SequentialGuidType.SequentialAtEnd)));
+            Enumerable.Range(0, quantity).AsParallel().ForAll(p =>
+                guids[p] = (SequentialGuidHelper.GenerateComb(sequentialGuidType)));
             Assert.Equal(guids, guids.Distinct());
         }
     }
