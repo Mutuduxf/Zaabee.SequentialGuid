@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaabee.SequentialGuid", "sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2613F8E7-B56B-4E64-8993-0C719EAC9BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "tests\TestProject\TestProject.csproj", "{5B8CE38F-AAAF-4D34-B164-A2D7AEDA64B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaabee.SequentialGuid.TestProject", "tests\Zaabee.SequentialGuid.TestProject\Zaabee.SequentialGuid.TestProject.csproj", "{5B8CE38F-AAAF-4D34-B164-A2D7AEDA64B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

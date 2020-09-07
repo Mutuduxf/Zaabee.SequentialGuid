@@ -3,7 +3,7 @@ using System.Linq;
 using Xunit;
 using Zaabee.SequentialGuid;
 
-namespace TestProject
+namespace Zaabee.SequentialGuid.TestProject
 {
     public class UnitTest
     {
