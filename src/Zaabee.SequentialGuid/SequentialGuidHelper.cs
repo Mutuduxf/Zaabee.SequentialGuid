@@ -2,7 +2,7 @@
 
 namespace Zaabee.SequentialGuid
 {
-    public class SequentialGuidHelper
+    public static class SequentialGuidHelper
     {
         /// <summary>
         /// Generate Comb

@@ -9,18 +9,16 @@ namespace Zaabee.SequentialGuid
     /// </summary>
     internal static class SequentialGuidGenerator
     {
-        private static readonly RNGCryptoServiceProvider Rng = new RNGCryptoServiceProvider();
-
         internal static Guid NewSequentialGuid(SequentialGuidType guidType)
         {
             var randomBytes = new byte[10];
-            Rng.GetBytes(randomBytes);
+            using (var rng = new RNGCryptoServiceProvider())
+                rng.GetBytes(randomBytes);
 
             var timestamp = DateTime.UtcNow.Ticks / 10000L;
             var timestampBytes = BitConverter.GetBytes(timestamp);
 
-            if (BitConverter.IsLittleEndian)
-                Array.Reverse(timestampBytes);
+            if (BitConverter.IsLittleEndian) Array.Reverse(timestampBytes);
 
             var guidBytes = new byte[16];
 

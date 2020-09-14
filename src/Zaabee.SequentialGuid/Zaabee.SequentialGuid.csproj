@@ -1,14 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageVersion>1.0.1</PackageVersion>
-    <Version>1.0.1</Version>
-    <Authors>Mutuduxf</Authors>
-    <Company>Mutuduxf</Company>
-    <PackageProjectUrl>https://github.com/Mutuduxf/Zaabee.SequentialGuid</PackageProjectUrl>
-    <Description>Sequential Guid (COMB).</Description>
-    <PackagelicenseUrl>https://raw.githubusercontent.com/Mutuduxf/Zaabee.SequentialGuid/master/LICENSE</PackagelicenseUrl>
-    <PackageTags>Zaabee Sequential Guid Comb</PackageTags>
-  </PropertyGroup>
+  
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>2020.1.0</PackageVersion>
+        <Version>2020.1.0</Version>
+        <Authors>Mutuduxf</Authors>
+        <Company>Mutuduxf</Company>
+        <PackageProjectUrl>https://github.com/Mutuduxf/Zaabee.SequentialGuid</PackageProjectUrl>
+        <Description>Sequential Guid (COMB).</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>Zaabee Sequential Guid Comb</PackageTags>
+    </PropertyGroup>
+  
 </Project>
