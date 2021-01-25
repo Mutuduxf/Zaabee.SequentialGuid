@@ -1,7 +1,6 @@
 using System;
 using System.Linq;
 using Xunit;
-using Zaabee.SequentialGuid;
 
 namespace Zaabee.SequentialGuid.TestProject
 {
