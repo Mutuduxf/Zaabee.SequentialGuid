@@ -13,7 +13,9 @@ namespace Zaabee.SequentialGuid
         {
             var randomBytes = new byte[10];
             using (var rng = new RNGCryptoServiceProvider())
+            {
                 rng.GetBytes(randomBytes);
+            }
 
             var timestamp = DateTime.UtcNow.Ticks / 10000L;
             var timestampBytes = BitConverter.GetBytes(timestamp);
