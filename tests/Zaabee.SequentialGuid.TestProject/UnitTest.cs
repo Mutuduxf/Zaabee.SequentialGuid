@@ -16,7 +16,7 @@ namespace Zaabee.SequentialGuid.TestProject
         {
             var guids = new Guid[Quantity];
             Enumerable.Range(0, Quantity).AsParallel().ForAll(p =>
-                guids[p] = (SequentialGuidHelper.GenerateComb(sequentialGuidType)));
+                guids[p] = SequentialGuidHelper.GenerateComb(sequentialGuidType));
             Assert.Equal(guids, guids.Distinct());
         }
     }
